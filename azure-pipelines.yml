@@ -6,7 +6,7 @@
 trigger:
 - main
 variables:
-  solutionDir: azure-pipelines.yml
+  solutionDir: resources
 
 pool:
   vmImage: ubuntu-latest
@@ -17,4 +17,11 @@ steps:
 
 - script: ls -la
   displayName: 'what directories and files in this current Directory?'
+
+- script: cat index.html
+  displayName: 'print out the index file contents'  
+
+- script: cat script.js
+  displayName: 'print out the javascript content'
+  workingDirectory: $(solutionDir)
   
