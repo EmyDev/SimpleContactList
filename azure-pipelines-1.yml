@@ -25,5 +25,5 @@ steps:
 
 - task: AzureStaticWebApp@0
   inputs:
-    app_location: '$(Build.ArtifactStagingDirectory)'
+    app_location: '$PublishBuildArtifacts@1.publishLocation)'
     azure_static_web_apps_api_token: $(API-TOKEN)
