@@ -24,4 +24,11 @@ steps:
 - script: cat script.js
   displayName: 'print out the javascript content'
   workingDirectory: $(solutionDir)
-  
+
+- script: cat script.js
+  displayName: 'print out the javascript content'
+  workingDirectory: $(solutionDir)
+
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: '.'
