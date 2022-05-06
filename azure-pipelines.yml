@@ -5,6 +5,8 @@
 
 trigger:
 - main
+variables:
+  solutionDir: azure-pipelines.yml
 
 pool:
   vmImage: ubuntu-latest
