@@ -17,4 +17,4 @@ steps:
 
 - script: ls -la
   displayName: 'what directories and files in this current Directory?'
-  workingDirectory: $(solutionDir)
+  
