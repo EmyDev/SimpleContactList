@@ -22,3 +22,8 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'webapp'
     publishLocation: 'Container'
+
+- task: AzureStaticWebApp@0
+  inputs:
+    app_location: '$(Build.ArtifactStagingDirectory)'
+    azure_static_web_apps_api_token: $(API-TOKEN)
